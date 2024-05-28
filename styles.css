@@ -39,6 +39,15 @@ header{
     background-color: white;
     align-items: center;
 }
+#btn{
+    background-color: var(--sea-color);
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
 #logo-eureka{
     width: 11rem;
     height: auto;
@@ -55,6 +64,7 @@ header{
 }
 .header__direita{
     display: flex;
+    align-items: center;
     gap: 8rem;
     margin-right: 10rem;
 }
