@@ -49,6 +49,10 @@ header{
     font-weight: 600;
     color: #6e6e6e;
 }
+.header__esquerda{
+    display: flex;
+    align-items: center;
+}
 .header__direita{
     display: flex;
     gap: 8rem;
