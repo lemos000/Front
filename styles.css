@@ -47,7 +47,6 @@ header{
     border-radius: 1rem;
     font-weight: 600;
     cursor: pointer;
-    margin-right: -2rem;
     margin-left: 2rem;
 }
 #logo-eureka{
@@ -68,7 +67,7 @@ header{
     display: flex;
     align-items: center;
     gap: 8rem;
-    margin-right: 10rem;
+    margin-right: 8rem;
 }
 .rodape{
     width: 100%;
