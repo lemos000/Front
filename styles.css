@@ -43,6 +43,10 @@ header{
     width: 13rem;
     height: auto;
 }
+.header__direita{
+    display: flex;
+    gap: 5rem;
+}
 .rodape{
     width: 100%;
     position: fixed;
