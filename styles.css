@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --sea-color: #1E7EF4;
+    --ocean-color: #5B8DF4;
+    --lake-color: #244AF5 .2;
+    --lagoon-color: #22b5f4;
+    --river-color: #58c5f5;
+    --water-color: #92c4f4;
+}   
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Reddit Sans', sans-serif;
+    background-image: url(./img/background-sea.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+
+    position: sticky;
+    width: 100%;
+    height: 20%;
+    background-color: var(--header-color);
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid #cacaca;
+    background-color: white;
+    align-items: center;
+}
+.rodape{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--sea-color);
+    align-items: center;
+
+}
+.rodape__superior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    
+}
+.rodape__superior a{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    background-color: var(--water-color);
+    border-radius: 2rem;
+    padding: .4rem;
+}
+.rodape__inferior{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
