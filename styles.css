@@ -47,6 +47,8 @@ header{
     border-radius: 1rem;
     font-weight: 600;
     cursor: pointer;
+    margin-right: -2rem;
+    margin-left: 2rem;
 }
 #logo-eureka{
     width: 11rem;
