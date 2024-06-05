@@ -74,20 +74,58 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 4vw;
 }
 .apresentacao__menu {
-    width: 95%;
-    padding: 1rem;
+    width: 100%;
     align-items: center;
     display: flex;
-    height: 20rem;
+    height: 100%;
 }
 .Salvando{
-    font-size: 200% !important;
+    font-size: 8vw !important;
     padding: 5vw;
     position: absolute;
+    width: 100%;
+    color: white;
 }
+.legenda__apresentacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bemvindo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+}
+.topico{
+    padding: 1vw;
+    text-transform: uppercase;
+   background-image: linear-gradient(
+     -225deg,
+     #244AF5 0%,
+     #5B8DF4 29%,
+     #22B5F4 67%,
+     #1e7ef4  100%
+   );
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   color: #fff;
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 2s linear infinite;
+   display: inline-block;
+   font-size: 5vw;
+ }
+ @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 
 .grid__items {
     justify-content: center;
