@@ -16,20 +16,23 @@
 body{
     font-family: 'Reddit Sans', sans-serif;
     background-image: url(./img/background-sea.svg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/* HEADER DO INDEX */
+
 header{
 
     position: sticky;
     width: 100%;
-    height: 20%;
+    height: 10vh;
     background-color: var(--header-color);
 }
 .header{
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 0;
     padding: 2rem;
     display: flex;
@@ -39,9 +42,28 @@ header{
     background-color: white;
     align-items: center;
 }
+
+/* MAIN DO INDEX */
+
+.apresentacao__menu{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .rodape{
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
     padding: 2rem;
     display: flex;
@@ -72,4 +94,7 @@ header{
     display: flex;
     padding: 1rem;
     gap: 1rem;
+}
+@media  (max-width: 468px) {
+    
 }
