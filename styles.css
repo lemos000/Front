@@ -9,8 +9,6 @@
     --water-color: #92c4f4;
 }
 
-
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -72,39 +70,36 @@ main {
     background-color: var(--sea-color);
     color: white;
 }
-.video_home{
+
+.video_home {
+    position:static;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.apresentacao__menu {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    height: 100%;
-}
+
 .sec-texto {
     display: inline-block;
-  }
-.Salvando{
+}
+
+.Salvando {
     font-size: 8vw !important;
     padding: 5vw;
     position: absolute;
     width: 100%;
     color: white;
 }
-.legenda__apresentacao{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.bemvindo{
+
+.bemvindo {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
     width: 100%;
 }
+
 .container {
     min-width: 30vw;
     min-height: 30vw;
@@ -166,14 +161,15 @@ main {
 .overlay p:last-of-type {
     margin-bottom: 0;
 }
-.item2 .overlay{
+
+.item2 .overlay {
     background-image: url(./img/MTk2MTM2OTE3NzkzNjQ1NzEz.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
-.item2 .overlay::after{
+
+.item2 .overlay::after {
     content: "";
     position: absolute;
     top: 0;
@@ -185,37 +181,41 @@ main {
     transition: background-color 0.3s ease; 
     z-index: 1; 
 }
-.surfista{
+
+.surfista {
     z-index: 2;
 }
-.topico{
+
+.topico {
     padding: 1vw;
     text-transform: uppercase;
-   background-image: linear-gradient(
-     -225deg,
-     #244AF5 0%,
-     #5B8DF4 29%,
-     #22B5F4 67%,
-     #1e7ef4  100%
-   );
-   background-size: auto auto;
-   background-clip: border-box;
-   background-size: 200% auto;
-   color: #fff;
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   animation: textclip 2s linear infinite;
-   display: inline-block;
-   font-size: 5vw;
- }
- @keyframes textclip {
+    background-image: linear-gradient(
+        -225deg,
+        #244AF5 0%,
+        #5B8DF4 29%,
+        #22B5F4 67%,
+        #1e7ef4 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 5vw;
+}
+
+@keyframes textclip {
     to {
-      background-position: 200% center;
+        background-position: 200% center;
     }
-  }
+}
 
 .grid__items {
+    font-size: 1rem;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -267,25 +267,29 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     display: none;
 }
+
 @media (max-width: 768px) {
     .grid__items {
+        font-size: 1rem;
         padding: 1rem;
         grid-template-columns: 1fr;
         grid-template-areas:
-          "item1"
-          "item2"
-          "item3"
-          "item4"
-          "item5";
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5";
     }
 
-    .menu-content{
+    .menu-content {
         max-height: 0;
         overflow: hidden;
     }
+
     .dropdown-menu {
         padding-left: 10% !important;
         margin-left: 3rem !important;
@@ -342,9 +346,11 @@ main {
         overflow: visible;
         transition: all 0.3s ease;
     }
+
     .botoes__acao {
         display: none;
     }
+
     .container {
         min-width: 90vw;
         min-height: 50vw;
@@ -356,18 +362,105 @@ main {
         font-size: 1.5rem;
         text-align: center;
     }
+
     .grid__items {
+        font-size: .2rem;
         padding: 1rem;
         grid-template-columns: 1fr;
         grid-template-areas:
-          "item1"
-          "item2"
-          "item3"
-          "item4"
-          "item5";
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5";
     }
+
     .container {
         min-width: 90vw;
         min-height: 50vw;
     }
+
+    .overlay {
+        display: none;
+    }
 }
+
+.apresentacao__menu {
+    width: 100%;
+    height: 100vh; /* Certifique-se de que o contêiner preencha a tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.legenda__apresentacao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.salvando {
+    font-size: 8vw !important;
+    color: white;
+}
+
+.container.item5 {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container.item5 .video_home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Vídeo de fundo */
+}
+
+.container.item5 .turtle-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%) scale(1);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.5; /* Opacidade inicial */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave */
+    z-index: 2; /* Imagem da tartaruga */
+}
+
+.container.item5:hover .turtle-image {
+    opacity: 1; /* Opacidade completa no hover */
+    transform: translate(-50%, -50%) scale(1.2); /* Ampliar no hover */
+}
+
+.container.item5 .central-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Texto escondido inicialmente */
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    z-index: 3; /* Título */
+    transition: transform 0.3s ease; /* Transição suave */
+    opacity: 0;
+}
+
+.container.item5:hover .central-text {
+    transform: translate(-50%, -50%) scale(1); /* Ampliar e mostrar no hover */
+    opacity: 1;
+}
+
