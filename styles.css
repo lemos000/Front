@@ -81,6 +81,9 @@ main {
     display: flex;
     height: 100%;
 }
+.sec-texto {
+    display: inline-block;
+  }
 .Salvando{
     font-size: 8vw !important;
     padding: 5vw;
