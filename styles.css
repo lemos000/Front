@@ -46,8 +46,11 @@ header{
 /* MAIN DO INDEX */
 
 .apresentacao__menu{
-    
+    height: 10rem;
+    width: 100%;
+    background-color: var(--lagoon-color);
 }
+
 
 
 
