@@ -70,14 +70,23 @@ main {
     background-color: var(--sea-color);
     color: white;
 }
-
+.video_home{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4vw;
+}
 .apresentacao__menu {
-    justify-content: center;
     width: 95%;
-    display: flex;
+    padding: 1rem;
     align-items: center;
+    display: flex;
     height: 20rem;
-    background-color: var(--lagoon-color);
+}
+.Salvando{
+    font-size: 200% !important;
+    padding: 5vw;
+    position: absolute;
 }
 
 .grid__items {
@@ -138,7 +147,9 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+.dropdown-menu{
+    display: none;
+}
 @media (max-width: 768px) {
     .grid__items {
         padding: 1rem;
@@ -151,10 +162,54 @@ main {
           "item5";
     }
 
-    .header {
-        flex-direction: column;
+    .menu-content{
+        max-height: 0;
+        overflow: hidden;
     }
-
+    .dropdown-menu{
+        padding-left: 10% !important;
+        margin-left: 3rem !important;
+        padding: 0 !important;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        padding: 20px;
+    }
+    .dropdown-menu ul{
+        list-style: none;
+        padding: 0;
+    }
+    .dropdown-menu a{
+        z-index: 1;
+        background: #fff;
+        border-radius: 0 !important;
+        text-decoration: none;
+        display: block;
+        color: #3c2ae6;
+        padding: 10px;
+    }
+    .dropdown-menu label{
+        display: block;
+        cursor: pointer;
+        background: url(./img/closed.png) no-repeat left center;
+        filter: hue-rotate(300deg);
+        padding: 30px 0 40px 80px;
+    }
+    input#menu{
+        display: none;
+    }
+    input:checked ~ label{
+        filter: hue-rotate(300deg);
+        background: url(./img/open.png) no-repeat left center;
+    }
+    input:checked ~ .menu-content{
+        position: absolute;
+        width: 25vw;
+        top: 10%;
+        max-height: 100%;
+        overflow: visible;
+    }
     .botoes__acao {
         display: none;
     }
