@@ -138,9 +138,15 @@ main {
     box-sizing: border-box;
     border-radius: 1rem;
 }
-
+.container:hover{
+    cursor: pointer;
+}
 .container:hover .overlay {
     opacity: 1;
+    cursor: pointer;
+}
+.item5:hover{
+    cursor: pointer;
 }
 
 .container::before {
@@ -266,6 +272,7 @@ main {
 }
 
 .rodape__inferior {
+    align-items: center;
     display: flex;
     padding: 1rem;
     gap: 1rem;
@@ -1135,4 +1142,15 @@ main {
 
 .cadastro__interesse button:hover {
     background-color: var(--ocean-color);
+}
+
+.footerLogos{
+    width: 2rem;
+    height: auto;
+}
+.foooterRedirect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }

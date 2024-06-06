@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+window.addEventListener('DOMContentLoaded', function() {
     const words = ["você", "o oceano", "o mundo"];
     const colors = ["#0077be", "#00a3cc", "#00c2e0"];
     const delayBetweenWords = 2000; 
@@ -75,4 +75,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         telefoneInput.value = value;
     });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const items = [
+        { selector: '.item1', url: 'https://www.minasbioconsultoria.com/post/as-consequ%C3%AAncias-causadas-por-vazamento-de-petr%C3%B3leo-nos-oceanos' },
+        { selector: '.item2', url: 'https://www.theinertia.com/surf/zak-noyle-tells-the-story-of-his-most-memorable-photo-wave-of-change/' },
+        { selector: '.item3', url: 'https://tamar.org.br/interna.php?cod=315' },
+        { selector: '.item4', url: 'https://noticias.uol.com.br/ultimas-noticias/rfi/2023/06/19/onu-adota-tratado-historico-para-protecao-dos-oceanos-apos-15-anos-de-discussoes.htm' },
+        { selector: '.item5', url: 'https://www.tamar.org.br/' }
+    ];
+
+    items.forEach(item => {
+        const element = document.querySelector(item.selector);
+        if (element) {
+            element.addEventListener('click', function () {
+                window.location.href = item.url;
+            });
+        }
+    })
 });
