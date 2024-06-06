@@ -5,19 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Azul</title>
     <link rel="stylesheet" href="../styles.css">
-    <script src=""></script>
+    <script src="../script/script.js"></script>
 </head>
 <body>
     <header class="header">
-
-    </header>
+        <img id="logo" src="../img/eurekalogo.png" alt="">
+        <div class="botoes__acao">
+          <a class="botoes__acao__botao" href="./integrantes.html">Equipe</a>
+          <a class="botoes__acao__botao" href="./sobreaeureka.html">Sobre</a>
+          <a class="botoes__acao__botao" href="../index.html">Home</a>
+          <a class="botoes__acao__botao ajuda" href="">Ajuda</a>
+        </div>
+        <div class="dropdown-menu">
+          <input type="checkbox" id="menu"/>
+          <label for="menu"></label>
+          <div class="menu-content">
+            <ul>
+              <li><a class="botoes__acao__botao" href="./integrantes.html">Equipe</a></li>
+              <li><a class="botoes__acao__botao" href="./sobreaeureka.html">Sobre</a></li>
+              <li><a class="botoes__acao__botao" href="../index.html">Home</a></li>
+              <li><a class="botoes__acao__botao ajuda" href="">Ajuda</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
     <main>
         <div class="integrantes">
-            <h2 class ="titulo__integrante">Integrantes</h2>
+            <h2 class ="titulo__integrante">INTEGRANTES</h2>
             <div class ="quadro__contato">
                 <p>Entre em Contato com a Eureka Insights</p>
                 <p> Na Eureka Insights, estamos dedicados a promover a conservação marinha através de soluções inovadoras e campanhas de conscientização impactantes. Se você deseja saber mais sobre nossos projetos, colaborar conosco ou tem alguma dúvida, estamos à disposição para ajudar.</p>
             </div>
+            <br>
             <div class="integrantes__container">
                 <div class="integrantes__card">
                     <img class="img__integrante" src="../img/de29b1ea-1a5a-4578-a309-4d2e1b16ca45.jpg" alt="Integrante Luiz Felipe">
