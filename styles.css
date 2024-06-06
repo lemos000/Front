@@ -842,7 +842,7 @@ main {
 
     .estrela {
         position: absolute;
-        bottom: -4vw;
+        bottom: -4vw !important;
         right: -3vw;
         width: 2.8rem;
     }
@@ -936,31 +936,31 @@ main {
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    opacity: 0.5; /* Opacidade inicial */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave */
-    z-index: 2; /* Imagem da tartaruga */
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    z-index: 2; 
 }
 
 .container.item5:hover .turtle-image {
-    opacity: 1; /* Opacidade completa no hover */
-    transform: translate(-50%, -50%) scale(1.2); /* Ampliar no hover */
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
 }
 
 .container.item5 .central-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0); /* Texto escondido inicialmente */
+    transform: translate(-50%, -50%) scale(0);
     color: white;
     font-size: 5vw;
     text-align: center;
-    z-index: 3; /* Título */
-    transition: transform 0.3s ease; /* Transição suave */
+    z-index: 3; 
+    transition: transform 0.3s ease; 
     opacity: 0;
 }
 
 .container.item5:hover .central-text {
-    transform: translate(-50%, -50%) scale(1); /* Ampliar e mostrar no hover */
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
 
@@ -993,7 +993,7 @@ main {
     animation: slideInRight 1s forwards;
     width: 100%;
     max-width: 600px;
-    position: relative; /* Adiciona posição relativa */
+    position: relative; 
 }
 
 .estrela {
@@ -1027,7 +1027,7 @@ main {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: justify; /* Justifica o texto */
+    text-align: justify; 
     width: 90vw;
     animation: fadeIn 1s forwards;
 }
