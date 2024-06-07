@@ -383,6 +383,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .bubbles {
@@ -505,7 +508,6 @@ main {
 
 .git__hub {
     display: flex;
-    gap: 1vw;
     align-items: center;
     text-decoration: none;
     color: black;

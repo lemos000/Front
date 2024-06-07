@@ -50,12 +50,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const telefoneInput = document.getElementById('telefone');
 
     cpfInput.addEventListener('input', function (e) {
-        let value = cpfInput.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+        let value = cpfInput.value.replace(/\D/g, ''); 
         if (value.length > 11) {
-            value = value.slice(0, 11); // Limita o valor a 11 dígitos
+            value = value.slice(0, 11); 
         }
 
-        // Aplica a máscara de CPF
+        
         value = value.replace(/(\d{3})(\d)/, '$1.$2');
         value = value.replace(/(\d{3})(\d)/, '$1.$2');
         value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
@@ -64,12 +64,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     telefoneInput.addEventListener('input', function (e) {
-        let value = telefoneInput.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+        let value = telefoneInput.value.replace(/\D/g, ''); 
         if (value.length > 11) {
-            value = value.slice(0, 11); // Limita o valor a 11 dígitos
+            value = value.slice(0, 11); 
         }
 
-        // Aplica a máscara de telefone
+       
         value = value.replace(/^(\d{2})(\d)/, '($1) $2');
         value = value.replace(/(\d{5})(\d)/, '$1-$2');
 
