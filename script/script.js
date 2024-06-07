@@ -94,3 +94,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     })
 });
+window.watsonAssistantChatOptions = {
+    integrationID: "56228ec7-d355-4569-b701-bf4331a1928f", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "62533943-3488-4541-b5fe-0bd708c9584f", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const textElements = document.querySelectorAll('.text-scroll');
+
+    textElements.forEach(element => {
+        if (scrollPosition > 500) {
+            element.classList.add('text-scroll-end');
+            element.classList.remove('text-scroll-start');
+        } else {
+            element.classList.add('text-scroll-start');
+            element.classList.remove('text-scroll-end');
+        }
+    });
+})

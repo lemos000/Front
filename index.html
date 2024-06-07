@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Azul</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="./script/script.js"></script>
-</head>
-<body>
-  <!-- HEADERZAO -->
+    <script src="./script/script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADERZAO -->
     <header class="header">
-      <img id="logo" src="./img/eurekalogo.png" alt="">
+      <img id="logo" src="./img/eurekalogo.png" alt="Logo da Eureka">
       <div class="botoes__acao">
         <a class="botoes__acao__botao" href="./html/integrantes.html">Equipe</a>
         <a class="botoes__acao__botao" href="./html/sobreaeureka.html">Sobre</a>
         <a class="botoes__acao__botao" href="./html/index.html">Home</a>
-        <a class="botoes__acao__botao ajuda" href="./html/comoajudar.html">COMO AJUDAR</a>
+        <a class="botoes__acao__botao ajuda" href="./html/comoajudar.html"
+          >COMO AJUDAR</a
+        >
       </div>
       <div class="dropdown-menu">
-        <input type="checkbox" id="menu"/>
+        <input type="checkbox" id="menu">
         <label for="menu"></label>
         <div class="menu-content">
           <ul>
-            <li><a class="botoes__acao__botao" href="./html/integrantes.html">Equipe</a></li>
-            <li><a class="botoes__acao__botao" href="./html/sobreaeureka.html">Sobre</a></li>
+            <li>
+              <a class="botoes__acao__botao" href="./html/integrantes.html"
+                >Equipe</a
+              >
+            </li>
+            <li>
+              <a class="botoes__acao__botao" href="./html/sobreaeureka.html"
+                >Sobre</a
+              >
+            </li>
             <li><a class="botoes__acao__botao" href="./index.html">Home</a></li>
             <li><a class="botoes__acao__botao ajuda" href="">Ajuda</a></li>
           </ul>
@@ -33,77 +43,139 @@
     <main>
       <div class="apresentacao__menu">
         <div class="legenda__apresentacao">
-              <span class="salvando">Salvando <span class="sec-texto">vocês?</span></span>
+          <span class="salvando"
+            >Salvando <span class="sec-texto">vocês?</span></span
+          >
         </div>
-              <video class="video_home" autoplay muted loop>
-              <source src="./videos/Wave of underwater for website background video - crackcodex.mp4" type="video/mp4"/>
-              Your browser does not support the video tag.
-              </video>
+        <video class="video_home" autoplay muted loop>
+          <source src="./videos/underwater-wave.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-          <div class="bemvindo">
-            <h1 class="topico">VOCÊ PODE FAZER A DIFERENÇA!</h1>
-          </div>
+      <div class="bemvindo">
+        <h1 class="topico">VOCÊ PODE FAZER A DIFERENÇA!</h1>
+      </div>
       <div class="grid__items">
         <div class="container item1">
-          <video autoplay muted loop class="video__cut" src="./videos/cutteryt.mp4"></video>
+          <video
+            autoplay
+            muted
+            loop
+            class="video__cut"
+            src="./videos/cutteryt.mp4"
+          ></video>
           <div class="overlay">
             <h1>O impacto do petróleo nos oceanos</h1>
-            <p>Veja as discussões atuais de medidas de prevenção e mitigação para reduzir os danos causados pelo derramamento de petróleo e promover a sustentabilidade dos oceanos.</p>
+            <p>
+              Veja as discussões atuais de medidas de prevenção e mitigação para
+              reduzir os danos causados pelo derramamento de petróleo e promover
+              a sustentabilidade dos oceanos.
+            </p>
           </div>
         </div>
         <div class="container item2">
-        <img class="video__cut" src="./img/MTk2MTM2OTE4MzMzMjAzNjAx.webp" alt="Homem surfando em praia de lixo">
+          <img
+            class="video__cut"
+            src="./img/surf-no-lixo.webp"
+            alt="Homem surfando em praia de lixo"
+          >
           <div class="overlay">
-              <div class="surfista">
-                <h1>O paraíso do surf e seus problemas</h1>
-                <p>Descubra a história destas fotos de Zak Noyle, tiradas na cobiçada paisagem de Java em 2019</p>
-              </div>
+            <div class="surfista">
+              <h1>O paraíso do surf e seus problemas</h1>
+              <p>
+                Descubra a história destas fotos de Zak Noyle, tiradas na
+                cobiçada paisagem de Java em 2019
+              </p>
+            </div>
           </div>
         </div>
         <div class="container item3">
-        <img class="video__cut" src="./img/albatroz4.jpg" alt="Albatroz ave morta com plátisco no estômago">
+          <img
+            class="video__cut"
+            src="./img/albatroz4.jpg"
+            alt="Albatroz ave morta com plátisco no estômago"
+          >
           <div class="overlay">
-                <h1>O plástico e o Albatroz</h1>
-                <p>Uma das aves mais afetadas pelo plástico é o Albatroz, esta que já está em estado de alerta de extinção (já sofre com a captura de epinhel pelágico), participa do imenso numéro de aves e peixes que sofrem diretamente ou indiretamente com a polução</p>
-              </div>
-            </div>
+            <h1>O plástico e o Albatroz</h1>
+            <p>
+              Uma das aves mais afetadas pelo plástico é o Albatroz, esta que já
+              está em estado de alerta de extinção (já sofre com a captura de
+              epinhel pelágico), participa do imenso numéro de aves e peixes que
+              sofrem diretamente ou indiretamente com a polução
+            </p>
+          </div>
+        </div>
         <div class="container item4">
-          <img class="video__cut" src="./img/tratado-global-oceanos-conexao-planeta.jpg" alt="Reunião do Conselho da ONU">
+          <img
+            class="video__cut"
+            src="./img/tratado-global-oceanos-conexao-planeta.jpg"
+            alt="Reunião do Conselho da ONU"
+          >
           <div class="overlay">
-                <h1>A história de 15 anos de um Tratado Internacional Histórico</h1>
-                <p>O tratado tem como objetivo principal combater ameaças e regular a exploração das águas profundas, protegendo cerca de 30% dessa área do planeta até 2030. O alto-mar representa 60% da superfície dos oceanos e fornece metade do oxigênio respirado pelas populações.</p>
-              </div>
+            <h1>A história de 15 anos de um Tratado Internacional Histórico</h1>
+            <p>
+              O tratado tem como objetivo principal combater ameaças e regular a
+              exploração das águas profundas, protegendo cerca de 30% dessa área
+              do planeta até 2030. O alto-mar representa 60% da superfície dos
+              oceanos e fornece metade do oxigênio respirado pelas populações.
+            </p>
+          </div>
         </div>
         <div class="container item5">
           <video class="video_home" autoplay muted loop>
-            <source src="./videos/Wave of underwater for website background video - crackcodex.mp4" type="video/mp4">
+            <source src="./videos/underwater-wave.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <img class="turtle-image" src="./img/tartaruga.png" alt="imagem de tartaruga">
+          <img
+            class="turtle-image"
+            src="./img/tartaruga.png"
+            alt="imagem de tartaruga"
+          >
           <h1 class="central-text">OCEANO</h1>
         </div>
       </div>
     </main>
     <!-- INICIO DO FOOTER  -->
     <footer class="rodape">
-        <div class="rodape__superior">
-            <h2>Protegendo os oceanos, preservamos o futuro</h2>
-            <a href="./html/comoajudar.html">Nos ajude</a>
+      <div class="rodape__superior">
+        <h2>Protegendo os oceanos, preservamos o futuro</h2>
+        <a href="./html/comoajudar.html">Nos ajude</a>
+      </div>
+      <div class="rodape__inferior">
+        <p>São Paulo</p>
+        <p>Fiap</p>
+        <p>Eureka Insights</p>
+        <h3>Nos siga</h3>
+        <div class="footerRedirect">
+          <a id="githubLink" href="https://github.com/lemos000/Front"
+            ><img
+              class="footerLogos"
+              src="./img/icons8-github.svg"
+              alt="Imagem do Github"
+          ></a>
+          <a id="instaLink" href="https://www.instagram.com/fiapoficial/"
+            ><img
+              class="footerLogos"
+              src="./img/icons8-insta.svg"
+              alt="Imagem do instagram"
+          ></a>
+          <a id="ytLink" href="https://www.youtube.com/watch?v=Z-ABQMaHA3k"
+            ><img
+              class="footerLogos"
+              src="./img/icons8-youtube.svg"
+              alt="Imagem do youtube"
+          ></a>
+          <a
+            id="fiapLink"
+            href="https://www.fiap.com.br/graduacao/global-solution/  "
+            ><img
+              class="footerLogos"
+              src="./img/fiap-logo.png"
+              alt="Logo da Fiap"
+          ></a>
         </div>
-        <div class="rodape__inferior">
-            <img src="" alt="">
-            <p>São Paulo</p>
-            <p>Fiap</p>
-            <p>Eureka Insights</p>
-            <h3>Nos siga</h3>
-            <div class="footerRedirect">
-                <a  id="githubLink" href="https://github.com/lemos000/Front"><img class="footerLogos" src="./img/icons8-github.svg" alt="Imagem do Github"></a> 
-                <a  id="instaLink" href="https://www.instagram.com/fiapoficial/"><img class="footerLogos" src="./img/icons8-insta.svg" alt="Imagem do instagram"></a>
-                <a  id="ytLink" href="https://www.youtube.com/watch?v=Z-ABQMaHA3k"><img class="footerLogos" src="./img/icons8-youtube.svg" alt="Imagem do youtube"></a> 
-                <a  id="fiapLink" href="https://www.fiap.com.br/graduacao/global-solution/  "><img class="footerLogos" src="./img/logo-420x100px.png_name_20221121-18288-5b9rii.png" alt="Logo da Fiap"></a>
-            </div>
-        </div>
-        <p>@Eureka Insights. Todos os direitos reservados</p>
+      </div>
+      <p>@Eureka Insights. Todos os direitos reservados</p>
     </footer>
-</body>
+  </body>
 </html>

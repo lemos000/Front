@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Azul</title>
     <link rel="stylesheet" href="../styles.css">
-    <script src="../script/script.js"></script>
+    <script src="../script/script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -17,7 +17,7 @@
           <a class="botoes__acao__botao ajuda" href="./comoajudar.html">COMO AJUDAR</a>
         </div>
         <div class="dropdown-menu">
-          <input type="checkbox" id="menu"/>
+          <input type="checkbox" id="menu">
           <label for="menu"></label>
           <div class="menu-content">
             <ul>
@@ -31,15 +31,15 @@
       </header>
     <main>
         <div class="integrantes">
-            <h2 class ="titulo__integrante">INTEGRANTES</h2>
+            <h2 class ="titulo__integrante text-scroll-end">INTEGRANTES</h2>
             <div class ="quadro__contato">
                 <p>Entre em Contato com a Eureka Insights</p>
                 <p> Na Eureka Insights, estamos dedicados a promover a conservação marinha através de soluções inovadoras e campanhas de conscientização impactantes. Se você deseja saber mais sobre nossos projetos, colaborar conosco ou tem alguma dúvida, estamos à disposição para ajudar.</p>
             </div>
             <br>
-            <div class="integrantes__container">
+            <div class="integrantes__container text-scroll text-scroll-start">
                 <div class="integrantes__card">
-                    <img class="img__integrante" src="../img/de29b1ea-1a5a-4578-a309-4d2e1b16ca45.jpg" alt="Integrante Luiz Felipe">
+                    <img class="img__integrante" src="../img/luiz.jpg" alt="Integrante Luiz Felipe">
                     <div class="legenda__integrantes">
                         <h3>Luiz Felipe</h3>
                         <a class="git__hub" target="_blank" href="https://github.com/L3to">Github <img class="git" src="../img/icons8-github.svg" alt="Icon GitHub"></a>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div class="integrantes__card">
-                    <img class="img__integrante" src="../img/de284840-6c88-4605-82e8-6c4dfc3b7e51.jpg" alt="">
+                    <img class="img__integrante" src="../img/lemos.jpg" alt="">
                     <div class="legenda__integrantes">
                         <h3>Gabriel Lemos</h3>
                         <a class="git__hub" target="_blank" href="https://github.com/lemos000">Github <img class="git" src="../img/icons8-github.svg" alt="Icon GitHub"></a>
@@ -55,11 +55,12 @@
                     </div>
                 </div>
                 <div class="integrantes__card">
-                    <img class="img__integrante" src="../img/Picture1.jpg" alt="">
+                    <img class="img__integrante" src="../img/kamada.jpg" alt="">
                     <div class="legenda__integrantes">
                         <h3>Luiz Kamada</h3>
-                        <p>RM557652</p>
+                        
                         <a class="git__hub" target="_blank" href="https://github.com/luizkamada">Github <img class="git" src="../img/icons8-github.svg" alt="Icon GitHub"></a>
+                        <p>RM557652</p>
                     </div>
                 </div>
                 <section class="sticky">
@@ -76,25 +77,24 @@
                       <div class="bubble"></div>
                       
                     </div>
-                  </section>
+                </section>
+            </div>
+        </div>
     </main>
     <footer class="rodape">
         <div class="rodape__superior">
             <h2>Protegendo os oceanos, preservamos o futuro</h2>
             <a href="../html/comoajudar.html">Nos ajude</a>
         </div>
-        <div class="rodape__inferior">
-            <img src="" alt="">
-            <p>São Paulo</p>
-            <p>Fiap</p>
-            <p>Eureka Insights</p>
-            <h3>Nos siga</h3>
-            <div class="footerRedirect">
-                <a  id="githubLink" href="https://github.com/lemos000/Front"><img class="footerLogos" src="../img/icons8-github.svg" alt="Imagem do Github"></a> 
-                <a  id="instaLink" href="https://www.instagram.com/fiapoficial/"><img class="footerLogos" src="../img/icons8-insta.svg" alt="Imagem do instagram"></a>
-                <a  id="ytLink" href="https://www.youtube.com/watch?v=Z-ABQMaHA3k"><img class="footerLogos" src="../img/icons8-youtube.svg" alt="Imagem do youtube"></a> 
-                <a  id="fiapLink" href="https://www.fiap.com.br/graduacao/global-solution/  "><img class="footerLogos" src="../img/logo-420x100px.png_name_20221121-18288-5b9rii.png" alt="Logo da Fiap"></a>
-            </div>
+        <p>São Paulo</p>
+        <p>Fiap</p>
+        <p>Eureka Insights</p>
+        <h3>Nos siga</h3>
+        <div class="footerRedirect">
+            <a  id="githubLink" href="https://github.com/lemos000/Front"><img class="footerLogos" src="../img/icons8-github.svg" alt="Imagem do Github"></a> 
+            <a  id="instaLink" href="https://www.instagram.com/fiapoficial/"><img class="footerLogos" src="../img/icons8-insta.svg" alt="Imagem do instagram"></a>
+            <a  id="ytLink" href="https://www.youtube.com/watch?v=Z-ABQMaHA3k"><img class="footerLogos" src="../img/icons8-youtube.svg" alt="Imagem do youtube"></a> 
+            <a  id="fiapLink" href="https://www.fiap.com.br/graduacao/global-solution/  "><img class="footerLogos" src="../img/fiap-logo.png" alt="Logo da Fiap"></a>
         </div>
         <p>@Eureka Insights. Todos os direitos reservados</p>
     </footer>
