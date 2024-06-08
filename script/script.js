@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
     const words = ["você", "o oceano", "o mundo"];
-    const colors = ["#0077be", "#00a3cc", "#00c2e0"];
+    const colors = ["white", "white", "#2E8B57"];
     const delayBetweenWords = 2000; 
     const typingSpeed = 150; 
     const erasingSpeed = 100; 
