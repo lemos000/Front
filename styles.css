@@ -287,7 +287,7 @@ main {
 
 .apresentacao__menu {
     width: 100%;
-    height: 100vh; /* Certifique-se de que o contêiner preencha a tela inteira */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -601,9 +601,9 @@ main {
 }
 
 .estrela {
-    position: absolute; /* Adiciona posição absoluta */
-    bottom: -1vw; /* Ajusta a posição vertical */
-    right: -1vw; /* Ajusta a posição horizontal */
+    position: absolute; 
+    bottom: -1vw; 
+    right: -1vw;
     width: 2.8rem;
 }
 
@@ -612,16 +612,16 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Certifica-se de que o contêiner ocupa toda a largura */
-    padding: 1rem; /* Adiciona um pouco de padding ao redor do vídeo */
+    width: 100%; 
+    padding: 1rem;
 }
 
 .focas {
-    width: 90%; /* Ajusta a largura do vídeo para ocupar 90% da largura do contêiner */
-    height: auto; /* Mantém a proporção do vídeo */
-    border-radius: 15px; /* Adiciona bordas arredondadas ao vídeo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Adiciona sombra ao vídeo */
-    object-fit: cover; /* Ajusta o vídeo para cobrir todo o contêiner */
+    width: 90%; 
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+    object-fit: cover; 
 }
 
 .descricao__missao {
