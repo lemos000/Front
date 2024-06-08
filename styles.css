@@ -622,6 +622,8 @@ main {
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
     object-fit: cover; 
+    width: 100vw;
+    height: 50vw;
 }
 
 .descricao__missao {
